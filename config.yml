@@ -1,0 +1,51 @@
+# Prędkości w km/h, przyspieszenie w km/h na sekundę.
+# icon      = ikona w GUI i model hulajnogi (zwykły materiał)
+# item-model = opcjonalnie własny model z resource packa, np. "kukirin:g2"
+#              (zostaw "" żeby używać zwykłego materiału)
+models:
+  g2:
+    name: "Kukirin G2"
+    max-speed: 40
+    acceleration: 7
+    icon: BLAZE_ROD
+    item-model: ""
+  g2master:
+    name: "Kukirin G2 Master"
+    max-speed: 50
+    acceleration: 8
+    icon: BLAZE_ROD
+    item-model: ""
+  g3:
+    name: "Kukirin G3"
+    max-speed: 55
+    acceleration: 9
+    icon: BLAZE_ROD
+    item-model: ""
+  g4:
+    name: "Kukirin G4"
+    max-speed: 65
+    acceleration: 10
+    icon: BLAZE_ROD
+    item-model: ""
+  g5:
+    name: "Kukirin G5"
+    max-speed: 75
+    acceleration: 12
+    icon: BLAZE_ROD
+    item-model: ""
+
+upgrades:
+  battery:        # bateria: szybsza hulajnoga
+    max-level: 3
+    speed-per-level: 5
+  controller:     # controller: szybsze przyspieszenie
+    max-level: 3
+    accel-per-level: 3
+  dual:           # dual: drugi silnik
+    max-level: 1
+    speed-bonus: 15
+    accel-bonus: 4
+  wheelie-bar:    # wheelie bar: lepsze hamowanie i skręcanie
+    max-level: 1
+    brake-bonus: 0.5
+    turn-bonus: 0.3
